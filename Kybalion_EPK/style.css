@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Old London";
+  src: url(OldLondon.ttf);
+}
+@font-face {
+  font-family: "Coco Sharp";
+  src: url(Coco-Sharp-Light-trial.ttf);
+}
+* {
+  text-decoration: none;
+  color: #dddee0d4;
+}
+html {
+  background: url(img/background.png);
+  background-size: cover;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  font-family: "Old London";
+}
+.nav-link {
+  margin: 0.5em;
+  font-size: 24px;
+}
+.nav-link:hover {
+  color: #545454;
+}
+#display-text {
+  font-family: "Old London";
+  font-size: 24px;
+  color: linear(#dddee0d4, #77797fd4);
+  /* letter-spacing: 0.1em; */
+  text-align: center;
+}
+#latest {
+  margin-bottom: 1.4em;
+}
+#audio-link {
+  margin: auto;
+}
+.bc-small, .bc-big {
+  margin: auto;
+}
+.logo {
+  margin: auto;
+  width: 18%;
+  margin-top: 0.5em;
+}
+.container {
+  font-family: "Coco Sharp";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.epk-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  width: 40%;
+  margin-bottom: 1.4em;
+  text-align: center;
+  border-radius: 32px;
+  font-weight: bold;
+  opacity: 90%;
+  background-color: #222222;
+}
+.epk-links:hover {
+  color: #545454;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.stream-link {
+  margin-right: 0.2em;
+}
+.stream-text {
+  font-size: 16px;
+}
+.fa-spotify {
+  color: #1dd05d;
+}
+.fa-bandcamp {
+  color: #1da0c3;
+}
+.fa-youtube {
+  color: #c71f1e;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+}
+.social-icon {
+  width: 24px;
+  color: antiquewhite;
+  margin: 0.1em;
+}
+.footer {
+  font-size: 8px;
+}
+@media (max-width: 500px) {
+  .bc-big {
+    display: block;
+  }
+  .bc-small {
+    display: none;
+  }
+  .stream-text {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+  .social-media {
+    width: 10%;
+  }
+  .epk-links {
+    width: 80%;
+  }
+}
+@media (min-width: 500px) {
+  .bc-small {
+    display: block;
+  }
+  .bc-big {
+    display: none;
+  }
+}
